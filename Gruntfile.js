@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		watch: {
 			scripts: {
-				files: ['src/enegist.loadingstate.js'],
+				files: ['src/temporary.loadingstate.js'],
 				task: ['newer:browserify', 'newer:uglify'],
 				options: {
 					spawn: false
@@ -16,8 +16,8 @@ module.exports = function(grunt) {
 		uglify: {
 			main: {
 				files: {
-					'dest/enegist.loadingstate.min.js': ['src/enegist.loadingstate.js'],
-					'dest/enegist.loadingstate.bundle.min.js': ['src/enegist.loadingstate.bundle.js']
+					'dest/temporary.loadingstate.min.js': ['src/temporary.loadingstate.js'],
+					'dest/temporary.loadingstate.bundle.min.js': ['src/temporary.loadingstate.bundle.js']
 				},
 				options: {}
 			}
@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 		browserify: {
 			main: {
 				files: {
-					'src/enegist.loadingstate.bundle.js': ['src/enegist.loadingstate.js']
+					'src/temporary.loadingstate.bundle.js': ['src/temporary.loadingstate.js']
 				},
 				options: {}
 			}

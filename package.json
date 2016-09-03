@@ -1,25 +1,21 @@
 {
-  "name": "enegist-loadingstate",
+  "name": "temporary.loadingstate",
   "version": "1.1.2",
   "description": "A utility for showing loading state of a process on the web",
-  "main": "dest/enegist.loadingstate.min.js",
-  "browser": "dest/enegist.loadingstate.min.js",
+  "main": "dest/temporary.loadingstate.min.js",
+  "browser": "dest/temporary.loadingstate.min.js",
   "repository": {
     "type": "git",
-    "url": "git@git.solar.enegist.com:enegist-js/enegist-loadingstate.git"
+    "url": "git@github.com:trickpeeraze/temporary.loadingstate.git"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "keywords": [
-    "enegist",
+    "temporary",
     "loadingstate",
     "progress"
   ],
-  "author": [
-    "Siraphob Rhompo <siraphob.r@enegist.com>"
-  ],
-  "license": "ISC",
+  "author": "Siraphob Rhompo <trickpeeraze@gmail.com> (https://temporarytrick.com)",
+  "license": "MIT",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-browserify": "^3.5.0",
@@ -31,8 +27,6 @@
     "time-grunt": "^1.1.0"
   },
   "dependencies": {
-    "jquery": "^2.1.3",
-    "enegist": "git+ssh://git@git.solar.enegist.com:enegist-js/enegist.git",
-    "jquery-setfullscreen": "git+ssh://git@git.solar.enegist.com:enegist-js/jquery-setfullscreen.git"
+    "jquery": "^2.1.3"
   }
 }
