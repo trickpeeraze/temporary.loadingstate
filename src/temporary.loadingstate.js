@@ -8,7 +8,7 @@
  * @license		MIT
  * 
  */
-(function (factory) {
+(function (factory, $) {
 
     if (typeof define === 'function' && define.amd) {
         // AMD. Register as an anonymous module.
@@ -18,15 +18,15 @@
         module.exports = factory;
     } else {
         // Browser globals
-        factory(jQuery);
+        factory($);
     }	
 	
 })(function($){
+	"use strict";
 	
 	var enegist = require('enegist');
 
 	$.fn.loadingState = function(options){
-		"use strict";
 		
 		/**
 		 * 	@param {number} speed		- time of animated each frame
@@ -153,4 +153,4 @@
 		};
 	}
 
-});
+}, jQuery);
